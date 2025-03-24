@@ -4,96 +4,6 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1742839664162" />
-          <option name="id" value="65057978-f8a7-40e2-9266-419a5b22e21d" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
-              <option name="method" value="POST" />
-              <option name="name" value="Draft" />
-              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW50ZXJuYWwgc2VydmVyIGVycm9yIiwiZXJyb3IiOiJVc2VyOiBhcm46YXdzOnN0czo6Nzg3MjMyODEzODM0OmFzc3VtZWQtcm9sZS9yb2xlX2F3c19wcnVlYmFfdGVjbmljYV9pbmRyYV8yMDI1L3JldG8taW5kcmEtMjAyNS1kZXYtY3JlYXRlQXBwb2ludG1lbnQgaXMgbm90IGF1dGhvcml6ZWQgdG8gcGVyZm9ybTogU05TOlB1Ymxpc2ggb24gcmVzb3VyY2U6IGFybjphd3M6c25zOnVzLWVhc3QtMTo3ODcyMzI4MTM4MzQ6cmV0by1pbmRyYS0yMDI1LWFwcG9pbnRtZW50cy1kZXYgYmVjYXVzZSBubyBpZGVudGl0eS1iYXNlZCBwb2xpY3kgYWxsb3dzIHRoZSBTTlM6UHVibGlzaCBhY3Rpb24ifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Internal server error&quot;,&#10;  &quot;error&quot;: &quot;User: arn:aws:sts::787232813834:assumed-role/role_aws_prueba_tecnica_indra_2025/reto-indra-2025-dev-createAppointment is not authorized to perform: SNS:Publish on resource: arn:aws:sns:us-east-1:787232813834:reto-indra-2025-appointments-dev because no identity-based policy allows the SNS:Publish action&quot;&#10;}" />
-              <option name="code" value="500" />
-              <option name="connectionEstablishingTime" value="1" />
-              <option name="contentType" value="application/json" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="349" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Connection" />
-                    <option name="value" value="keep-alive" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 24 Mar 2025 18:07:44 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Credentials" />
-                    <option name="value" value="true" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="x-amzn-RequestId" />
-                    <option name="value" value="f10fb76c-3289-4a0f-8ff1-cefe028a296a" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Access-Control-Allow-Origin" />
-                    <option name="value" value="*" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="x-amz-apigw-id" />
-                    <option name="value" value="H8XZiGuzIAMEalQ=" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="X-Amzn-Trace-Id" />
-                    <option name="value" value="Root=1-67e19f6f-68243d2850aa992d39e1323c;Parent=2739360c76451bf1;Sampled=0;Lineage=1:be076698:0" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="X-Cache" />
-                    <option name="value" value="Error from cloudfront" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Via" />
-                    <option name="value" value="1.1 e39143fc84c9fe81dc86709ef5060742.cloudfront.net (CloudFront)" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="X-Amz-Cf-Pop" />
-                    <option name="value" value="SCL51-P2" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="X-Amz-Cf-Id" />
-                    <option name="value" value="fFr6Z5Pa1w5o4PnudS-EQdFq8s1ko_NbbBRWUFBY04gGYl9hmeUU2A==" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="65057978-f8a7-40e2-9266-419a5b22e21d" />
-              <option name="message" value="Internal Server Error" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Internal server error&quot;,&quot;error&quot;:&quot;User: arn:aws:sts::787232813834:assumed-role/role_aws_prueba_tecnica_indra_2025/reto-indra-2025-dev-createAppointment is not authorized to perform: SNS:Publish on resource: arn:aws:sns:us-east-1:787232813834:reto-indra-2025-appointments-dev because no identity-based policy allows the SNS:Publish action&quot;}" />
-              <option name="size" value="349" />
-              <option name="time" value="681" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="drafts" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1742839922986" />
           <option name="id" value="78a78c56-9ad5-48b6-be85-8aed03fa48bd" />
           <option name="request">
@@ -899,6 +809,96 @@
               <option name="rawBodyString" value="{&quot;id&quot;:&quot;6e0362ab-18b2-4bf6-9afb-d2cf8cb3d411&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:26:07.724Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:26:07.724Z&quot;}" />
               <option name="size" value="197" />
               <option name="time" value="4159" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742845005697" />
+          <option name="id" value="f938bdad-bafe-4b76-81e1-c65a739afdde" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6ImVhYzQzYWQxLTc4NzUtNGQ1OS05YTA3LWU5YTZiYmM0YTJmOCIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxOTozNjo0NC45MzlaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxOTozNjo0NC45MzlaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;eac43ad1-7875-4d59-9a07-e9a6bbc4a2f8&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T19:36:44.939Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T19:36:44.939Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="78" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 19:36:45 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="33dabf0b-6ea4-49e2-9b18-149a293d2d9a" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8kbmGFeIAMEpGw=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1b449-59be76a249199d2b3f9e8f43;Parent=1c35e3f80a57efa5;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 efff942f5fbfeab2d6cc3eafc9a95662.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="LIM50-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="HpmS2z0XylmLyHRtWWzeXS1bx4AwqBJnCypDye8dr2GqYwtA9Qj-Xw==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f938bdad-bafe-4b76-81e1-c65a739afdde" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;eac43ad1-7875-4d59-9a07-e9a6bbc4a2f8&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:36:44.939Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:36:44.939Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="3993" />
             </responseState>
           </option>
           <option name="workspaceId" value="drafts" />
