@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1742839664162" />
+          <option name="id" value="65057978-f8a7-40e2-9266-419a5b22e21d" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJtZXNzYWdlIjoiSW50ZXJuYWwgc2VydmVyIGVycm9yIiwiZXJyb3IiOiJVc2VyOiBhcm46YXdzOnN0czo6Nzg3MjMyODEzODM0OmFzc3VtZWQtcm9sZS9yb2xlX2F3c19wcnVlYmFfdGVjbmljYV9pbmRyYV8yMDI1L3JldG8taW5kcmEtMjAyNS1kZXYtY3JlYXRlQXBwb2ludG1lbnQgaXMgbm90IGF1dGhvcml6ZWQgdG8gcGVyZm9ybTogU05TOlB1Ymxpc2ggb24gcmVzb3VyY2U6IGFybjphd3M6c25zOnVzLWVhc3QtMTo3ODcyMzI4MTM4MzQ6cmV0by1pbmRyYS0yMDI1LWFwcG9pbnRtZW50cy1kZXYgYmVjYXVzZSBubyBpZGVudGl0eS1iYXNlZCBwb2xpY3kgYWxsb3dzIHRoZSBTTlM6UHVibGlzaCBhY3Rpb24ifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;message&quot;: &quot;Internal server error&quot;,&#10;  &quot;error&quot;: &quot;User: arn:aws:sts::787232813834:assumed-role/role_aws_prueba_tecnica_indra_2025/reto-indra-2025-dev-createAppointment is not authorized to perform: SNS:Publish on resource: arn:aws:sns:us-east-1:787232813834:reto-indra-2025-appointments-dev because no identity-based policy allows the SNS:Publish action&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="349" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:07:44 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="f10fb76c-3289-4a0f-8ff1-cefe028a296a" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8XZiGuzIAMEalQ=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e19f6f-68243d2850aa992d39e1323c;Parent=2739360c76451bf1;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Error from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 e39143fc84c9fe81dc86709ef5060742.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="fFr6Z5Pa1w5o4PnudS-EQdFq8s1ko_NbbBRWUFBY04gGYl9hmeUU2A==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="65057978-f8a7-40e2-9266-419a5b22e21d" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;message&quot;:&quot;Internal server error&quot;,&quot;error&quot;:&quot;User: arn:aws:sts::787232813834:assumed-role/role_aws_prueba_tecnica_indra_2025/reto-indra-2025-dev-createAppointment is not authorized to perform: SNS:Publish on resource: arn:aws:sns:us-east-1:787232813834:reto-indra-2025-appointments-dev because no identity-based policy allows the SNS:Publish action&quot;}" />
+              <option name="size" value="349" />
+              <option name="time" value="681" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742839922986" />
+          <option name="id" value="78a78c56-9ad5-48b6-be85-8aed03fa48bd" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjdmNTQ3YmZlLWNmOWEtNDgxZC05ZDM0LTJkY2ZjY2VlNTRkYiIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoxMjowMi4zMTFaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoxMjowMi4zMTFaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;7f547bfe-cf9a-481d-9d34-2dcfccee54db&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T18:12:02.311Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T18:12:02.311Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="68" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:12:02 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="006b5e90-b357-4079-9794-10f6b64cd61a" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8YBoFrroAMEpog=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1a070-26eed0ba551dac797809be87;Parent=1a8c5a18cff8ba8c;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 9c2aead96bd3177f92a03e01a6804fc6.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="LIM50-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="xrGmYPgWcbcTC4O00i7xkiiuuibDqs5JHSlH1GjUrkFP7Dkxy057CQ==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="78a78c56-9ad5-48b6-be85-8aed03fa48bd" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;7f547bfe-cf9a-481d-9d34-2dcfccee54db&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T18:12:02.311Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T18:12:02.311Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="2856" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742840554770" />
+          <option name="id" value="8fd393ee-45ed-4d36-8b25-0bbfdd7260f2" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjA0NmE2ZGU2LWEwMjEtNDZiNS1hMzVlLWMyNDMyNjg2OGQwNCIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoyMjozNC4wNDlaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoyMjozNC4wNDlaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;046a6de6-a021-46b5-a35e-c24326868d04&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T18:22:34.049Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T18:22:34.049Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="157" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:22:34 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="73253973-516a-493b-a5d4-cbf3190f72d2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8ZkUHgvoAMEJxQ=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1a2e8-6ad4a122571020ea1b697fe4;Parent=58f8c5796989ccaf;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 f4ef7b104c9d70c483c8aae39e281c50.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="7YRs48FblCXfa4r9Rdtfd8RFoWFigu7iAZHWfssLXpf8ucGd7sbezw==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="8fd393ee-45ed-4d36-8b25-0bbfdd7260f2" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;046a6de6-a021-46b5-a35e-c24326868d04&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T18:22:34.049Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T18:22:34.049Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="2961" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742840797560" />
+          <option name="id" value="93abfc3e-eb0a-4a16-a9b2-7566962187b6" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjliNDgxM2NlLWQ2OGQtNGM2Yy1hNzk2LTFjZDA0ZjA4ZWY3MiIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoyNjozNi44NjRaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxODoyNjozNi44NjRaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;9b4813ce-d68d-4c6c-a796-1cd04f08ef72&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T18:26:36.864Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T18:26:36.864Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="122" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:26:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="06ae1c59-0a22-4cb7-963a-d74b377de8bb" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8aKLG5NIAMEgow=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1a3da-5fe2a5775acd8cb741117a0c;Parent=79156635f45d9296;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 e5a8b52815dbc513cb0f443c50ceacfa.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="LIM50-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="AUNm1au35rAeDtqtZZIwXfGVbQFSHjh4tnnw6KBRbHp1mUqOhJG2Kg==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="93abfc3e-eb0a-4a16-a9b2-7566962187b6" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;9b4813ce-d68d-4c6c-a796-1cd04f08ef72&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T18:26:36.864Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T18:26:36.864Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="3554" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742841194423" />
+          <option name="id" value="0253bcd0-e351-4d5e-aedf-8e333286ac3e" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjY2YWU0OGY2LTk5NzctNGQ5Yi1hNTc4LWQyZjJlMzg0NWE1MSIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxODozMzoxMy42ODJaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxODozMzoxMy42ODJaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;66ae48f6-9977-4d9b-a578-d2f2e3845a51&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T18:33:13.682Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T18:33:13.682Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="130" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:33:14 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="d1e76f97-5536-44dd-80ef-9f65a3eb8a1d" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8bIJGiHoAMECjA=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1a566-4a1d370720390c4c16733eda;Parent=2d9935bc8b9ed7d4;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 3e24930a0c94da5bc043c45503b024dc.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="zPsBUsv0whDRQWaMhfBw7cSOz-AoE3Gc-fPs_u93_cnOmXycbGeCfw==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0253bcd0-e351-4d5e-aedf-8e333286ac3e" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;66ae48f6-9977-4d9b-a578-d2f2e3845a51&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T18:33:13.682Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T18:33:13.682Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="3640" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742842199581" />
+          <option name="id" value="1c8451b9-1d82-44fa-a229-3b807d3efc91" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6ImFkMDVhOTBiLTRhNWMtNDQxMy05MDZhLTQxZTQyYzhmNmJhZCIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxODo0OTo1OC44NDBaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxODo0OTo1OC44NDBaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;ad05a90b-4a5c-4413-906a-41e42c8f6bad&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T18:49:58.840Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T18:49:58.840Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="132" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 18:49:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="5b7fb915-8642-4f2f-a378-b69669b56501" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8dlLHxGIAMEOHw=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1a953-170ad2e652e875170b9e08e2;Parent=7543e0849c29440b;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 bdb098d998828367ec4f98e76251e0f2.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="2AzwwbSHy4yy-Q533OoZtocvCY5jEhCkvbUIUsES4c_DCHBeU9Fe5Q==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1c8451b9-1d82-44fa-a229-3b807d3efc91" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;ad05a90b-4a5c-4413-906a-41e42c8f6bad&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T18:49:58.840Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T18:49:58.840Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="3873" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742842987675" />
+          <option name="id" value="9e7e7649-0085-4006-a2cf-c318c42ffe8a" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value=" https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6ImYwN2MzOTgyLWJkMjMtNGY0YS1iN2JmLTNlMTE2NjAwYWUwYSIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxOTowMzowNi44NTVaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxOTowMzowNi44NTVaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;f07c3982-bd23-4f4a-b7bf-3e116600ae0a&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T19:03:06.855Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T19:03:06.855Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="128" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 19:03:07 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="32a92988-04d0-429b-9265-fda906cd261c" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8fgSFvvoAMEX1g=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1ac67-4eb05ef613fba7d535aef8b2;Parent=3acda0a38e8b56ae;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 a78b883f23f1e844073a5e759e24430c.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="KzdMvMsaA4l0lI1oSyfEdlnol2Rowcw4UQ8nw0TyZ9YgA_tiNHWlXQ==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="9e7e7649-0085-4006-a2cf-c318c42ffe8a" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;f07c3982-bd23-4f4a-b7bf-3e116600ae0a&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:03:06.855Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:03:06.855Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="4030" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742843768765" />
+          <option name="id" value="e70d10ef-4e11-43f8-ba8d-c73a3e6c76f0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6ImM1MTI3YzBiLTI2YzUtNGIxNy1iYTkwLTI1YjBhMzU4Zjc3YSIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToxNjowNy45ODRaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToxNjowNy45ODRaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;c5127c0b-26c5-4b17-ba90-25b0a358f77a&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T19:16:07.984Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T19:16:07.984Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="130" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 19:16:08 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="5221caab-0c0c-491a-b5c3-647dac5f013e" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8haSEYGoAMEQdw=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1af74-19c3ea311ffa278001a8c9ef;Parent=19167e5a3d7df4a0;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 5e0800ceb1a5048445bfc3fa58461056.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="lIviKyG9-n7PMzSDV2_EkYGZohvfTA4aTOxGa9jrW8G6y8vtynYArg==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e70d10ef-4e11-43f8-ba8d-c73a3e6c76f0" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;c5127c0b-26c5-4b17-ba90-25b0a358f77a&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:16:07.984Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:16:07.984Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="4287" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742844023341" />
+          <option name="id" value="3610a3d1-1af0-4763-b1ef-46c94ed6edc5" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjFmNjExMDY2LTQ3OGMtNDNlMC04M2QzLTcxNWM0MGRhMTVjOSIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToyMDoyMi42NDVaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToyMDoyMi42NDVaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;1f611066-478c-43e0-83d3-715c40da15c9&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T19:20:22.645Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T19:20:22.645Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="75" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 19:20:23 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="5335cc7b-48cf-4a90-a79e-87f86a8885d6" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8iCMHLJIAMEJwA=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1b074-2e0f5ec427e869ec22765bde;Parent=0950670d0160b7c9;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 d7d2d082ef2deeb97c85fa0ec32cc66e.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="LIM50-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="U0dW_HznqLsXzQ0pTJrmcuTb4UounaqstzxOdXHuPbLqmJ-msARRMA==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="3610a3d1-1af0-4763-b1ef-46c94ed6edc5" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;1f611066-478c-43e0-83d3-715c40da15c9&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:20:22.645Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:20:22.645Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="3427" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1742844368522" />
+          <option name="id" value="74fbff6a-64ed-44eb-a5e0-24020d658de0" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6IjZlMDM2MmFiLTE4YjItNGJmNi05YWZiLWQyY2Y4Y2IzZDQxMSIsImluc3VyZWRJZCI6IjEyMzQ1Iiwic2NoZWR1bGVJZCI6MTAwLCJjb3VudHJ5SVNPIjoiUEUiLCJzdGF0dXMiOiJwZW5kaW5nIiwiY3JlYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToyNjowNy43MjRaIiwidXBkYXRlZEF0IjoiMjAyNS0wMy0yNFQxOToyNjowNy43MjRaIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: &quot;6e0362ab-18b2-4bf6-9afb-d2cf8cb3d411&quot;,&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;,&#10;  &quot;status&quot;: &quot;pending&quot;,&#10;  &quot;createdAt&quot;: &quot;2025-03-24T19:26:07.724Z&quot;,&#10;  &quot;updatedAt&quot;: &quot;2025-03-24T19:26:07.724Z&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="156" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="197" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 24 Mar 2025 19:26:08 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Credentials" />
+                    <option name="value" value="true" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amzn-RequestId" />
+                    <option name="value" value="c7f8247d-223c-49b7-9f6a-665b2a72bf30" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Access-Control-Allow-Origin" />
+                    <option name="value" value="*" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="x-amz-apigw-id" />
+                    <option name="value" value="H8i4FHVzIAMERDQ=" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amzn-Trace-Id" />
+                    <option name="value" value="Root=1-67e1b1cc-2d8c65cf6711578c1d556ab4;Parent=52245c4d713e6d18;Sampled=0;Lineage=1:be076698:0" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Cache" />
+                    <option name="value" value="Miss from cloudfront" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Via" />
+                    <option name="value" value="1.1 bdb098d998828367ec4f98e76251e0f2.cloudfront.net (CloudFront)" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Pop" />
+                    <option name="value" value="SCL51-P2" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="X-Amz-Cf-Id" />
+                    <option name="value" value="A6RnAM8RYdM_RgSL6oZN6uDKEU53Ht-HBg5qr393oJTmwAcSLw0hRA==" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="74fbff6a-64ed-44eb-a5e0-24020d658de0" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:&quot;6e0362ab-18b2-4bf6-9afb-d2cf8cb3d411&quot;,&quot;insuredId&quot;:&quot;12345&quot;,&quot;scheduleId&quot;:100,&quot;countryISO&quot;:&quot;PE&quot;,&quot;status&quot;:&quot;pending&quot;,&quot;createdAt&quot;:&quot;2025-03-24T19:26:07.724Z&quot;,&quot;updatedAt&quot;:&quot;2025-03-24T19:26:07.724Z&quot;}" />
+              <option name="size" value="197" />
+              <option name="time" value="4159" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>

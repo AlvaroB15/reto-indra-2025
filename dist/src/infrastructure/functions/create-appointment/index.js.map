@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/infrastructure/functions/create-appointment/index.ts"],"names":[],"mappings":";;AAAA,MAAM,MAAM,GAAG;IACX,OAAO,EAAE,wEAAwE;IACjF,MAAM,EAAE;QACJ;YACI,IAAI,EAAE;gBACF,IAAI,EAAE,eAAe;gBACrB,MAAM,EAAE,MAAM;gBACd,IAAI,EAAE,IAAI;aACb;SACJ;KACJ;CACJ,CAAC;AAEF,kBAAe,MAAM,CAAC"}

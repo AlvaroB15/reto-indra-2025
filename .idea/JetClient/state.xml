@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;insuredId&quot;: &quot;12345&quot;,&#10;  &quot;scheduleId&quot;: 100,&#10;  &quot;countryISO&quot;: &quot;PE&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="37a81084-e402-4103-bbed-7448e47cc76c" />
+              <option name="method" value="POST" />
+              <option name="name" value="Draft" />
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="c2aa1f5d-92a7-4740-9f6f-f0e851402c54" />
+    <option name="version" value="6" />
+  </component>
+</project>
