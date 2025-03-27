@@ -21,7 +21,11 @@ import {
     ConfirmationQueue,
     ConfirmationQueuePolicy
 } from "@resources/Sqs";
-import {AppointmentEventBus, AppointmentConfirmationRule} from "@resources/EventBridge";
+import {
+    AppointmentEventBus,
+    AppointmentConfirmationRule,
+    EventBridgeSQSPermission
+} from "@resources/EventBridge";
 
 const serverlessConfiguration: AWS = {
     org: "alvarob15",
@@ -87,10 +91,12 @@ const serverlessConfiguration: AWS = {
                             "dynamodb:Query",
                             "dynamodb:GetItem",
                             "dynamodb:Scan",
-                            "dynamodb:PutItem"
+                            "dynamodb:PutItem",
+                            "dynamodb:UpdateItem",
                         ],
                         Resource: [
                             "arn:aws:dynamodb:us-east-1:*:table/${self:service}-appointments-${self:provider.stage}",
+                            "arn:aws:dynamodb:us-east-1:*:table/${self:service}-appointments-${self:provider.stage}/index/*"
                         ]
                     },
                     {
@@ -129,10 +135,16 @@ const serverlessConfiguration: AWS = {
                     {
                         Effect: "Allow",
                         Action: [
-                            "events:PutEvents"
+                            "events:PutEvents",
+                            "events:PutRule",
+                            "events:PutTargets",
+                            "events:DescribeRule",
+                            "events:ListRules",
+                            "events:ListTargetsByRule"
                         ],
                         Resource: [
-                            {"Fn::GetAtt": ["AppointmentEventBus", "Arn"]}
+                            {"Fn::GetAtt": ["AppointmentEventBus", "Arn"]},
+                            {"Fn::Join": [":", ["arn:aws:events", {"Ref": "AWS::Region"}, {"Ref": "AWS::AccountId"}, "rule/${self:service}-events-${self:provider.stage}/*"]]}
                         ]
                     }
                 ],
@@ -153,6 +165,7 @@ const serverlessConfiguration: AWS = {
             AppointmentConfirmationRule,
             ConfirmationQueue,
             ConfirmationQueuePolicy,
+            EventBridgeSQSPermission
         }
     },
     functions: {createAppointment, getAppointments, appointmentPe, appointmentCl, confirmationHandler},
@@ -166,7 +179,6 @@ const serverlessConfiguration: AWS = {
                 port: 8000,
                 inMemory: true,
                 migrate: true,
-                // dynamodbEndpoint: "http://localhost:8000"
             }
         },
         mysql: {

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/infrastructure/functions/appointment-cl/index.ts"],"names":[],"mappings":";;AACA,MAAM,MAAM,GAAG;IACX,OAAO,EAAE,oEAAoE;IAC7E,MAAM,EAAE;QACJ;YACI,GAAG,EAAE;gBACD,GAAG,EAAE,EAAE,YAAY,EAAE,CAAC,uBAAuB,EAAE,KAAK,CAAC,EAAE;gBACvD,SAAS,EAAE,EAAE;aAChB;SACJ;KACJ;CACJ,CAAC;AAEF,kBAAe,MAAM,CAAC"}

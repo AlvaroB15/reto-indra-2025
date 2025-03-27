@@ -6,6 +6,7 @@ import {ConfigService} from "../config/Config.service";
 
 export class MySQLAppointmentChileRepository implements AppointmentMysqlRepository{
     private dataSource: DataSource;
+    private connectionPromise: Promise<DataSource> | null = null;
 
     constructor(private readonly configService: ConfigService) {
         this.dataSource = new DataSource({
@@ -25,12 +26,19 @@ export class MySQLAppointmentChileRepository implements AppointmentMysqlReposito
         });
     }
 
-    async initialize(): Promise<void> {
-        if (!this.dataSource.isInitialized) {
-            await this.dataSource.initialize();
+    private getConnection(): Promise<DataSource> {
+        if (!this.connectionPromise) {
+            this.connectionPromise = this.dataSource.initialize()
+                .then(async (ds) => {
+                    await this.ensureTableExists();
+                    return ds;
+                })
+                .catch(error => {
+                    this.connectionPromise = null;
+                    throw error;
+                });
         }
-        // Verificar si la tabla existe, si no, crearla
-        await this.ensureTableExists();
+        return this.connectionPromise;
     }
 
     private async ensureTableExists(): Promise<void> {
@@ -59,7 +67,7 @@ export class MySQLAppointmentChileRepository implements AppointmentMysqlReposito
     }
 
     async saveAppointment(appointment: Appointment): Promise<void> {
-        await this.initialize();
+        await this.getConnection();
 
         const queryRunner = this.dataSource.createQueryRunner();
         await queryRunner.connect();

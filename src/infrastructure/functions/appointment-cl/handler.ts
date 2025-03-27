@@ -15,7 +15,7 @@ export const handler: SQSHandler = async (event: SQSEvent) => {
             const message = JSON.parse(record.body);
 
             // Si el mensaje viene de SNS, hay que procesarlo adicionalmente
-            const appointmentData = record.eventSource === 'aws:sns'
+            const appointmentData = record.eventSource === 'aws:sqs'
                 ? JSON.parse(message.Message)
                 : message;
 

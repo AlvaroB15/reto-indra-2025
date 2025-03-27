@@ -8,7 +8,7 @@ const lambda = {
                 cors: true
             }
         }
-    ]
+    ],
 };
 
 export default lambda;

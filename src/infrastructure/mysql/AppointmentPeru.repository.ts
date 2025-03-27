@@ -6,6 +6,7 @@ import {AppointmentMysqlRepository} from "../../domain/repositories/AppointmentM
 
 export class MySQLAppointmentPeruRepository implements AppointmentMysqlRepository{
     private dataSource: DataSource;
+    private connectionPromise: Promise<DataSource> | null = null;
 
     constructor(private readonly configService: ConfigService) {
         this.dataSource = new DataSource({
@@ -23,6 +24,21 @@ export class MySQLAppointmentPeruRepository implements AppointmentMysqlRepositor
             },
             driver: require('mysql2')
         });
+    }
+
+    private getConnection(): Promise<DataSource> {
+        if (!this.connectionPromise) {
+            this.connectionPromise = this.dataSource.initialize()
+                .then(async (ds) => {
+                    await this.ensureTableExists();
+                    return ds;
+                })
+                .catch(error => {
+                    this.connectionPromise = null;
+                    throw error;
+                });
+        }
+        return this.connectionPromise;
     }
 
     private async ensureTableExists(): Promise<void> {
@@ -50,16 +66,10 @@ export class MySQLAppointmentPeruRepository implements AppointmentMysqlRepositor
         }
     }
 
-    async initialize(): Promise<void> {
-        if (!this.dataSource.isInitialized) {
-            await this.dataSource.initialize();
-        }
-        // Verificar si la tabla existe, si no, crearla
-        await this.ensureTableExists();
-    }
+
 
     async saveAppointment(appointment: Appointment): Promise<void> {
-        await this.initialize();
+        await this.getConnection();
 
         const queryRunner = this.dataSource.createQueryRunner();
         await queryRunner.connect();

@@ -25,7 +25,6 @@ describe('CreateAppointmentService', () => {
 
         mockPublisher = {
             publishAppointmentCreated: jest.fn(),
-            publishAppointmentConfirmed: jest.fn()
         };
 
         // Inicializar el servicio con los mocks

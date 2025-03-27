@@ -16,8 +16,43 @@ export const AppointmentConfirmationRule = {
         Targets: [
             {
                 Id: 'ConfirmationQueue',
-                Arn: { 'Fn::GetAtt': ['ConfirmationQueue', 'Arn'] }
+                Arn: { 'Fn::GetAtt': ['ConfirmationQueue', 'Arn'] },
+                // InputPath: '$.detail'
+                // InputTransformer: {
+                //     InputPathsMap: {
+                //         "appointmentId": "$.detail.appointmentId",
+                //         "countryISO": "$.detail.countryISO"
+                //     },
+                //     InputTemplate: JSON.stringify({
+                //         detail: {
+                //             appointmentId: "<appointmentId>",
+                //             countryISO: "<countryISO>"
+                //         }
+                //     })
+                // }
             }
+        ]
+    }
+};
+
+export const EventBridgeSQSPermission = {
+    Type: 'AWS::SQS::QueuePolicy',
+    Properties: {
+        PolicyDocument: {
+            Version: '2012-10-17',
+            Statement: [
+                {
+                    Effect: 'Allow',
+                    Principal: {
+                        Service: 'events.amazonaws.com'
+                    },
+                    Action: 'sqs:SendMessage',
+                    Resource: {'Fn::GetAtt': ['ConfirmationQueue', 'Arn']}
+                }
+            ]
+        },
+        Queues: [
+            {Ref: 'ConfirmationQueue'}
         ]
     }
 };

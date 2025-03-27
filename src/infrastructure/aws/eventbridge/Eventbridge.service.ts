@@ -26,6 +26,14 @@ export class EventBridgeService implements AppointmentEventService {
             ]
         };
 
-        await this.client.send(new PutEventsCommand(params));
+        try {
+            const result = await this.client.send(new PutEventsCommand(params));
+            if (result.FailedEntryCount && result.FailedEntryCount > 0) {
+                console.error('Error al publicar eventos:', JSON.stringify(result.Entries));
+            }
+        } catch (error) {
+            console.error('Error al publicar en EventBridge:', error);
+            throw error;
+        }
     }
 }

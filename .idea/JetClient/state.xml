@@ -17,6 +17,20 @@
               <option name="name" value="Draft" />
               <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments" />
             </requestState>
+            <requestState>
+              <option name="id" value="498c3cd9-29a3-48db-9dcc-d2b871036009" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft (1)" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="insuredId" />
+                    <option name="value" value="12345" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="https://xwygngmis9.execute-api.us-east-1.amazonaws.com/dev/appointments?insuredId=12345" />
+            </requestState>
           </list>
         </option>
       </draftsState>

@@ -1,11 +1,11 @@
 export const PeruAppointmentQueue = {
-        Type: 'AWS::SQS::Queue',
-        Properties: {
-            QueueName: '${self:service}-pe-${self:provider.stage}',
-            VisibilityTimeout: 60,
-            MessageRetentionPeriod: 345600 // 4 días
-        }
-    };
+    Type: 'AWS::SQS::Queue',
+    Properties: {
+        QueueName: '${self:service}-pe-${self:provider.stage}',
+        VisibilityTimeout: 60,
+        MessageRetentionPeriod: 345600 // 4 días
+    }
+};
 
 export const ChileAppointmentQueue = {
     Type: 'AWS::SQS::Queue',
@@ -26,17 +26,17 @@ export const PeruQueuePolicy = {
                     Effect: 'Allow',
                     Principal: '*',
                     Action: 'sqs:SendMessage',
-                    Resource: { 'Fn::GetAtt': ['PeruAppointmentQueue', 'Arn'] },
+                    Resource: {'Fn::GetAtt': ['PeruAppointmentQueue', 'Arn']},
                     Condition: {
                         ArnEquals: {
-                            'aws:SourceArn': { Ref: 'AppointmentTopic' }
+                            'aws:SourceArn': {Ref: 'AppointmentTopic'}
                         }
                     }
                 }
             ]
         },
         Queues: [
-            { Ref: 'PeruAppointmentQueue' }
+            {Ref: 'PeruAppointmentQueue'}
         ]
     }
 };
@@ -51,17 +51,17 @@ export const ChileQueuePolicy = {
                     Effect: 'Allow',
                     Principal: '*',
                     Action: 'sqs:SendMessage',
-                    Resource: { 'Fn::GetAtt': ['ChileAppointmentQueue', 'Arn'] },
+                    Resource: {'Fn::GetAtt': ['ChileAppointmentQueue', 'Arn']},
                     Condition: {
                         ArnEquals: {
-                            'aws:SourceArn': { Ref: 'AppointmentTopic' }
+                            'aws:SourceArn': {Ref: 'AppointmentTopic'}
                         }
                     }
                 }
             ]
         },
         Queues: [
-            { Ref: 'ChileAppointmentQueue' }
+            {Ref: 'ChileAppointmentQueue'}
         ]
     }
 };
@@ -86,17 +86,17 @@ export const ConfirmationQueuePolicy = {
                     Effect: 'Allow',
                     Principal: '*',
                     Action: 'sqs:SendMessage',
-                    Resource: { 'Fn::GetAtt': ['ConfirmationQueue', 'Arn'] },
+                    Resource: {'Fn::GetAtt': ['ConfirmationQueue', 'Arn']},
                     Condition: {
                         ArnEquals: {
-                            'aws:SourceArn': { Ref: 'AppointmentConfirmationRule' }
+                            'aws:SourceArn': { "Fn::GetAtt": ["AppointmentConfirmationRule", "Arn"] }
                         }
                     }
                 }
             ]
         },
         Queues: [
-            { Ref: 'ConfirmationQueue' }
+            {Ref: 'ConfirmationQueue'}
         ]
     }
 };

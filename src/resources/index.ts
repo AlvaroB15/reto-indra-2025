@@ -12,4 +12,4 @@ export {
     ConfirmationQueuePolicy
 } from "./Sqs"
 
-export {AppointmentEventBus, AppointmentConfirmationRule} from "./EventBridge"
+export {AppointmentEventBus, AppointmentConfirmationRule, EventBridgeSQSPermission} from "./EventBridge"

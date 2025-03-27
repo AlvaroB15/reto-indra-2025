@@ -1,4 +1,4 @@
-import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
+import {DynamoDBClient, ReturnValue} from '@aws-sdk/client-dynamodb';
 import {
     DynamoDBDocumentClient,
     PutCommand,
@@ -8,17 +8,17 @@ import {
 } from '@aws-sdk/lib-dynamodb';
 import {Appointment} from "../../../domain/entities/Appointment.entity";
 import {AppointmentDynamoDBRepository} from "../../../domain/repositories/AppointmentDynamoDB.repository";
+import {ConfigService} from "../../config/Config.service";
 
 
 export class DynamoDBAppointmentRepository implements AppointmentDynamoDBRepository {
     private readonly docClient: DynamoDBDocumentClient;
     private readonly tableName: string;
 
-    constructor() {
+    constructor(private readonly configService: ConfigService) {
         const client = new DynamoDBClient({});
         this.docClient = DynamoDBDocumentClient.from(client);
-        this.tableName = process.env.DYNAMODB_TABLE || '';
-        // this.tableName = this.configService.get<string>('DYNAMODB_TABLE');
+        this.tableName = this.configService.get<string>('DYNAMODB_TABLE');
     }
 
     async save(appointment: Appointment): Promise<Appointment> {
@@ -52,9 +52,11 @@ export class DynamoDBAppointmentRepository implements AppointmentDynamoDBReposit
                 ':status': status,
                 ':updatedAt': new Date().toISOString()
             },
-            // ReturnValues: 'ALL_NEW'
+            ReturnValues: ReturnValue.ALL_NEW
         };
+
         const { Attributes } = await this.docClient.send(new UpdateCommand(params));
+
         if (!Attributes) return null;
         return new Appointment({
             id: Attributes.id,

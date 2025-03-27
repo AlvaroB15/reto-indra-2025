@@ -16,7 +16,7 @@ export function initializeContainer(): Container {
     container.register('ConfigService', configService);
 
     // Repositorios
-    const dynamoRepository = new DynamoDBAppointmentRepository();
+    const dynamoRepository = new DynamoDBAppointmentRepository(configService);
     container.register('AppointmentRepository', dynamoRepository);
 
     const peruRepository = new MySQLAppointmentPeruRepository(configService);

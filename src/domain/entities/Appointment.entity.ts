@@ -46,22 +46,4 @@ export class Appointment {
         this.updatedAt = params.updatedAt || new Date();
         this.scheduleDetails = params.scheduleDetails;
     }
-
-    complete(): void {
-        this.status = AppointmentStatus.COMPLETED;
-        this.updatedAt = new Date();
-    }
-
-    fail(): void {
-        this.status = AppointmentStatus.FAILED;
-        this.updatedAt = new Date();
-    }
-
-    isPeru(): boolean {
-        return this.countryISO === CountryISO.PERU;
-    }
-
-    isChile(): boolean {
-        return this.countryISO === CountryISO.CHILE;
-    }
 }

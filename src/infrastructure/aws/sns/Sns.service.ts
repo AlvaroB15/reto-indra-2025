@@ -30,17 +30,10 @@ export class SNSService implements AppointmentPublisherService {
                 countryISO: {
                     DataType: 'String',
                     StringValue: appointment.countryISO
-                    // StringValue: JSON.stringify(appointment)
                 }
             }
         };
 
         await this.snsClient.send(new PublishCommand(params));
-    }
-
-    async publishAppointmentConfirmed(_appointmentId: string, _countryISO: string): Promise<void> {
-        // Esta función no se utiliza para SNS, pero se implementa por la interfaz
-        // La confirmación se maneja a través de EventBridge
-        return;
     }
 }

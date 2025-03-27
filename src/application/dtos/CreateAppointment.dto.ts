@@ -1,4 +1,5 @@
 import { IsString, IsNumber, IsIn, Length, Matches } from 'class-validator';
+import {Transform} from "class-transformer";
 
 /**
  * @swagger
@@ -25,6 +26,7 @@ export class CreateAppointmentDto {
     @IsString()
     @Length(5, 5)
     @Matches(/^\d{5}$/, { message: 'insuredId must be a 5-digit number' })
+    @Transform(({ value }) => value?.trim()) // Elimina espacios en blanco
     insuredId: string;
 
     /**
