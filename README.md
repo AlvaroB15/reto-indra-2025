@@ -46,13 +46,6 @@ El sistema utiliza una arquitectura orientada a eventos para procesar citas méd
 Credenciales para el Mysql (solo entrar 1 que tiene limitaciones, y da el to many connections)
 Como dato adicional, te pide un certificado, deben descargarlo y adjuntarlo
 ```json
-Host=reto-indra-pe-alvaro15unmsm-5ed7.j.aivencloud.com
-DB=defaultdb
-USER=avnadmin
-PASSWORD=AVNS_jJbLsQXq68i20AGgnOW
-CA certificate
-
-Dejo el link, ya que Git no me deja adjuntar un pem
-https://drive.google.com/file/d/1Ihp7JJXxza6h2GPIisjAxzM5VcqQ83hL/view?usp=sharing
-
+cred de mysql y el pem para que permita conectarse
+https://drive.google.com/file/d/1n1Yyu6BLkgI6a2QOnG_30vZaLkNyWMXR/view?usp=sharing
 ```
